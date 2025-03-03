@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4c2c2;
+    font-family: Arial, sans-serif;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Teks Muncul Setelah Video */
+.hidden-message {
+    display: none; /* Sembunyikan teks awalnya */
+    font-size: 24px;
+    color: white;
+    background: darkred;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
